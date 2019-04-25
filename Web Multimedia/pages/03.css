@@ -144,3 +144,7 @@ body.narrow .chapter {
 .profilePic{
   border-radius: 50%;
 }
+
+#contacto {
+  text-align: justify;
+}
