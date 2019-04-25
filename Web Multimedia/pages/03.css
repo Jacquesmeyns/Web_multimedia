@@ -46,6 +46,11 @@ a{
    Chapter Styles
 ************************************** */
 
+#logo{
+  width: 120px;
+  height: auto;
+}
+
 .chapter {
   margin: 1em;
   margin-top: 50px;
