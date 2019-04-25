@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Clicker Studio - Juegos</title>
+    <link rel="stylesheet" href="03.css" type="text/css" />
+    
+  </head>
+
+  <body background="../imagenes/fondo.jpg">
+    <basefont face="Arial">
+
+    <div id="container" class="banner">
+
+      <div id="switcher" class="switcher">
+        <h3>Clicker Studio</h3>
+        <button id="switcher-default">
+          <a href = "../index.html"> Inicio </a>
+        </button>
+        <button id="switcher-narrow">
+          <a href = "juegos.html"> Juegos </a>
+        </button>
+        <button id="switcher-large">
+          <a href = "contacto.html"> Contacto </a>
+        </button>
+      </div>
+
+      <div class="chapter">
+        <ul>
+        <li>
+          <h1><a href="Inmortal.html">INMORTAL</a></h1>
+          <p>Inmortal es un juego de plataformas al más puro estilo Castlevania. Presente en la época del Antiguo Egipto y unos años después del final de una terrible guerra entre humanos y vampiros, encarnas el personaje de Príncipe, el joven hijo de un  faraón enfermo que deberá poner fin definitivamente a la existencia de los chupa sangre que quedan escondidos en lo más profundo de la pirámide. Para ello recibirá entrenamiento y deberá adquirir ciertos poderes que irá obteniendo a medida que supere diversos obstáculos y derrotando a poderosos monstruos. ¡Ayuda a nuestro intrépido guerrero en su lucha contra las fuerzas del mal!
+</p>
+        </li>
+        <li>
+          
+          <div style="text-align: center;">
+          <button onclick="playPause()">Play/Pause</button>   
+          <video id="video1" width="320" height="240" autoplay>
+          <source src="../imagenes/video_1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+
+          </div>
+        </li>
+        </ul>
+      </div>
+
+      <div class="chapter">
+        <ul>
+        <li>
+          <img align= center src="../kerbal.png">
+        </li>
+        <li>
+          <h1><a href="DeepDown.html">DEEP DOWN</a></h1>
+          <p>Deep Down es una experiencia cooperativa en el que los jugadores tendrán que limpiar de enemigos una mazmorra, generada por los propios usuarios en cada sesión. La narrativa del juego la elige y desarrolla el propio equipo antes o durante la partida. Disfruta creando tu propio mundo de fantasía y liberando a la princesa del dragón o ves subiendo puestos en tu empresa derrotando a otros oficinistas y derrocando al jefe para poder así hacerte con la dirección de esta. ¡Todo está en tu mano y en tu imaginación! No obstante te ofrecemos un variado surtido de temáticas preinstaladas y listas para poder jugar inmediatamente.</p>
+        </li>
+        </ul>
+      </div>
+
+      <script> 
+      var myVideo = document.getElementById("video1"); 
+
+      function playPause() 
+      { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      </script> 
+      
+    </div>
+  </body>
+</html>
