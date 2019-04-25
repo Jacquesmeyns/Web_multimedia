@@ -135,3 +135,7 @@ body.narrow .chapter {
 .galeria{
   text-align: center;
 }
+
+.profilePic{
+  border-radius: 50%;
+}
