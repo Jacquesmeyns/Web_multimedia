@@ -8,15 +8,19 @@ html, body {
 }
 
 body {
-  font: Helvetica, Arial, sans-serif;
+  font-family: serif;
   color: #000;
 }
 
-
+div #copy{
+  font-size: small;
+  font-style: italic;
+  padding-bottom: 15px; 
+}
 
 #container {
   width: 1000px;
-  height: 600px;
+  height: auto;
   margin: auto;
 }
 
@@ -65,6 +69,7 @@ a{
   width: auto;
   border-color: black;
   border-width: 5px;
+  padding: 20px 0 20px;
 }
 .chapter ul li h1
 {
@@ -78,15 +83,31 @@ a{
 }
 .chapter ul li img{
   margin-left: : 10px;
-  padding: 5px;
   width: 300px;
   text-align: left;
+  box-shadow: 0 0 3px #000;
+
+}
+
+#logo_inmortal{
+  position: absolute;
+  margin-right: 10px;
+  text-align: unset;
+  width: 300px;
+  box-shadow: none;
+  filter: drop-shadow(0 0 3px #000);
 }
 
 .banner {
   align-items: center;
   justify-content: center;
 }
+
+.switcher #logo, button{
+  box-shadow: none;
+  filter: drop-shadow(0 0 2px #666);
+}
+
 .switcher {
   top: 5px;  
   position: sticky;
@@ -97,8 +118,18 @@ a{
   padding: 10px;
   text-align: center;
   font-size: .9em;
-  filter: drop-shadow(0 0 3px #333);
+  filter: drop-shadow(0 0 3px #000);
 }
+
+/*.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 1px #000000;
+    top: 0;
+    left: 0;
+
+}*/
 .switcher h3 {
   font-size: 25px;
   font-weight: bolder;
@@ -156,8 +187,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 img {
   vertical-align: middle;
-  /**/
-  filter: drop-shadow(0 0 3px #333);
+  /*
+  filter: drop-shadow(0 0 3px #333);*/
 }
 
 .mySlides.fade img{
@@ -235,10 +266,10 @@ img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  filter: drop-shadow(0 0 3px #333);
+  box-shadow: 0 0 3px #000;
 }
  .mySlides.fade img{
-  filter: drop-shadow(0 0 3px #666);
+  box-shadow: 0 0 3px #000;
  }
 
 .active, .dot:hover {
