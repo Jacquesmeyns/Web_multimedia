@@ -15,7 +15,7 @@
 
     <div id="container" class="banner">
       <div id="contenedor_sticky">
-        <div id="switcher" class="switcher">
+        <div id="stickySwitcher" class="switcher">
           <img id="logo" src="imagenes/misc/logo.gif"><br>
           <button>
             <a href = "index.html"> Inicio </a>
@@ -106,6 +106,7 @@
 </div>
 
 <script>
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -132,6 +133,21 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function autoSlide() {
+  while(true){
+      await sleep(5000)
+      plusSlides(1);
+    }
+}
+
+  autoSlide();
+
+  
 </script>
 
 <!--                                                    -->
@@ -143,7 +159,7 @@ function showSlides(n) {
       </form>
 -->
 
-      <div class="chapter">
+      <div class="chapter" id="bottom">
         <ul>
         <li>
           <img id="logo_inmortal" align="center" src="./imagenes/misc/004.png">
