@@ -93,7 +93,7 @@
   <div class="text">Caption Three</div>
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="prev" onclick="plusSlides(-1); entrada = true">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
@@ -109,6 +109,7 @@
 
 var slideIndex = 1;
 showSlides(slideIndex);
+var tiempo = 5000;
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -140,12 +141,12 @@ function sleep(ms) {
 
 async function autoSlide() {
   while(true){
-      await sleep(5000)
+      await sleep(tiempo)
       plusSlides(1);
     }
 }
 
-  autoSlide();
+autoSlide();
 
   
 </script>
@@ -160,14 +161,14 @@ async function autoSlide() {
 -->
 
       <div class="chapter" id="bottom">
-        <ul>
-        <li>
-          <img id="logo_inmortal" align="center" src="./imagenes/misc/004.png">
+        <ul class="final">
+        <li id="logo_inmortal">
+          <img src="./imagenes/misc/004.png">
         </li>
-        <li>
+        <li id="texto_logo">
           <p>Los mejores diseños, y los mas innovadores, estan esperando a que decidas sumarte. ¿Tienes curiosidad? Regístrate y podrás estar al corriente de todas las novedades. ¿Estás interesado en alguno de nuestros proyectos y crees que puedes ayudar a mejorar la experiencia que ofrecemos a nuestros usuarios? Descubre toda la variedad de juegos que te ofrece esta creativa empresa de diseño y desarrollo de videojuegos.</p>
         </li>
-        </ul>
+      </ul>
       </div>
 
     <div id="copy">

@@ -89,13 +89,30 @@ a{
 
 }
 
-#logo_inmortal{
-  position: absolute;
+#logo_inmortal {
+  float: left;
+  width: 40%;
+  padding: 40px 0 0 0;
+}
+
+#logo_inmortal img{
   margin-right: 10px;
-  text-align: unset;
-  width: 300px;
   box-shadow: none;
   filter: drop-shadow(0 0 3px #000);
+  
+}
+
+ul.final {
+  display: inline-block;
+}
+
+ul.final li {
+  padding: unset;
+}
+
+#texto_logo {
+  padding: auto;
+  width: 70%;
 }
 
 .banner {
