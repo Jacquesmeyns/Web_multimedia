@@ -121,15 +121,21 @@ ul.final li {
   justify-content: center;
 }
 
-.switcher #logo, button{
+.switcher #logo{
+  box-shadow: none;
+
+  filter: drop-shadow(0 0 2px #666);
+}
+
+ button{
   box-shadow: none;
   filter: drop-shadow(0 0 2px #666);
+  border-radius: 30px;
 }
 
 .switcher {
   top: 5px;  
   position: sticky;
-  /*float: middle;*/
   background-color: #f4ac41;
   border: 1px solid #000;
   margin: 10px;
@@ -137,6 +143,8 @@ ul.final li {
   text-align: center;
   font-size: .9em;
   filter: drop-shadow(0 0 3px #000);
+  z-index: 5;
+  margin: auto;
 }
 
 /*.shadow {
@@ -313,7 +321,7 @@ img {
   to {opacity: 1}
 }
 
-/*reproductor de video*/
+/* Reproductor de video */
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -332,3 +340,32 @@ img {
 
 }
 
+/* Efecto paralax */
+
+.parallax {
+  /* The image used */
+  background-image: url("../imagenes/007.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Esto quita el espacio en blanco que dejan debajo de la imagen.
+    Lo borro para que no haya huecos extraños y después de las dunas
+    sea todo un color plano
+
+    https://stackoverflow.com/questions/5804256/image-inside-div-has-extra-space-below-the-image
+    */
+  line-height: 0px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+#dunas{
+  padding-top: 200px;
+  max-width: 100%;
+  bottom: 0px;
+}
