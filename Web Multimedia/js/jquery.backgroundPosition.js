@@ -1,5 +1,5 @@
 /**
- * @author Alexander Farkas
+ * Créditos a: Alexander Farkas
  * v. 1.02
  */
 (function($) {
