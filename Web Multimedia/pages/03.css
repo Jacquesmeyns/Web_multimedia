@@ -137,6 +137,10 @@ ul.final li {
   border-radius: 30px;
 }
 
+button a{
+  text-decoration: none;
+}
+
 .switcher {
   top: 5px;
   position: sticky;
