@@ -209,6 +209,7 @@ body.narrow .chapter {
 .profilePic{
   border-radius: 50%;
   border-top-left-radius: 80px;
+  margin: auto;
 }
 
 #contacto {
