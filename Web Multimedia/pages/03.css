@@ -336,7 +336,7 @@ img {
   width: 1440px;
   height: 900px;
   align-self: center;
-  margin: auto;
+  margin: 50px 0 50px;
 }
 .videoWrapper iframe {
   position: absolute;
@@ -345,14 +345,13 @@ img {
   /* Ajustar valores al vídeo*/
   width: 1440px;
   height: 900px;
-
 }
 
 /* Efecto paralax */
 
 .parallax {
   /* The image used */
-  background-image: url("../imagenes/007.png");
+  background-image: url("../imagenes/inmortal/fondoinmortal.png");
 
   /* Set a specific height */
   min-height: 500px; 
