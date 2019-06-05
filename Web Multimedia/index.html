@@ -167,65 +167,8 @@
   <span class="dot" onclick="currentSlide(6)"></span>
   <span class="dot" onclick="currentSlide(7)"></span>
 </div>
-<!--añadi tants dt co imagenes tengamos -->
+
 <script src="js/galeriaAutomatica.js"></script>
-
-<!--
-<script>
-
-var slideIndex = 1;
-showSlides(slideIndex);
-var tiempo = 5000;
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function autoSlide() {
-  while(true){
-      await sleep(tiempo)
-      plusSlides(1);
-    }
-}
-
-autoSlide();
-
-  
-</script>
--->
-<!--                                                    -->
-<!--
-      <form name="f1" class="galeria">
-        <input type="button" value="<<" onclick="atras()">
-        <img align="center" src="./imagenes/misc/foto1.jpg" width="400" height="300" id="foto">
-        <input type="button" value=">>" onclick="adelante()">
-      </form>
--->
-
       <div class="chapter" id="bottom">
         <ul class="final">
         <li id="logo_inmortal">
